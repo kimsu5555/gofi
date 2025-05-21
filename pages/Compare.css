@@ -146,15 +146,19 @@ button:hover {
   justify-content: space-between;
 }
 .pie-chart-item {
-  width: 45%; /* 각 원형 그래프가 2개씩 가로로 나열되게 */
+  width: 45%;
+  min-width: 300px; /* 최소 크기 지정 */
+  box-sizing: border-box;
+  padding: 1em;
   text-align: center;
 }
 
-.compare-output table {
-  width: 100%;
-  border-collapse: collapse;
+.pie-chart-item canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 600px; /* 원하는 최대 크기 */
+  margin: 0 auto;
 }
-
 .compare-output th, .compare-output td {
   padding: 8px;
   border: 1px solid #ddd;
