@@ -1,0 +1,41 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #ffffff; /* 바탕화면 색깔*/
+    min-height: 110vh; /*글씨가 위에서 얼마나 떨어져있는지*/
+    letter-spacing: -3px; /* 글씨간의 간격 조절 */
+    line-height: 50px; /* 줄 간격을 줄이는 경우 */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(30px + 3vmin);
+    color: rgb(3, 1, 8); /*폰트 색깔*/
+  }
+  
+  .App-link {
+    color: #000303;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

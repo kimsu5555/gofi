@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #fbfafae6; /* 전체 배경색 */
+}
+
+.list {
+    list-style: none; 
+    padding: 10px 0; /* 전체 여백 (상하 패딩만 남김) */
+    justify-content: center; /* 가운데 정렬 */
+    display: flex;
+    margin: 0;   
+    position: fixed;
+    top: 0; /* 상단에서 얼마나? */
+    left: 0vh; /* 왼쪽 끝에서 시작 */
+    right: 0; /* 오른쪽 끝까지 확장 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    background-color: #ffffff; /* 배경색 추가 */
+    z-index: 1000; /* 다른 요소 위로 쌓이도록 설정 */
+} 
+
+.list li {
+    flex: 0 0 auto; /* 항목 크기를 자동으로 설정 */
+    min-width: 70px; /* 최소 너비 설정 (약 7글자 기준) */
+    margin: 0 10px; /* 항목 간 간격 설정 (좌우 여백) */
+    padding: 10px; /* 패딩 추가 */
+    margin: 0 5px; /* 좌우 여백 설정 (좌 0, 우 5px) */
+    border-radius: 10px;
+    margin-left: 20px; /* 왼쪽 여백 추가 */
+    transition: transform 0.2s, box-shadow 0.2s; /* 호버 시 효과 추가 */
+    font-size: calc(4px + 2vmin);
+}
+
+.list li a {
+    color: inherit; /* 하이퍼링크의 색상을 부모 요소와 동일하게 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.list li a:visited {
+    color: inherit; /* 클릭 후에도 색상이 바뀌지 않도록 */
+}
+
+.list li:hover {
+    transform: translateY(-4px); /* 호버 시 약간 위로 이동 */
+    /*box-shadow: 0 4px 8px rgba(78, 77, 77, 0.2); /* 호버 시 그림자 증가 */
+}
